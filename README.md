@@ -38,35 +38,12 @@
 
 ### 环境要求
 - Python 3.8+ 
-- 网络连接（需访问币安API和Odaily新闻API）
-- 可选：虚拟环境（推荐使用venv或conda）
 
 ### 安装步骤
-1. **克隆仓库**
+**克隆仓库**
 ```bash
 git clone https://github.com/Ibook000/crypto_mcp_server.git
 cd crypto_mcp_server
-```
-
-2. **安装依赖**
-```bash
-pip install -r requirements.txt
-```
-
-3. **配置API密钥**
-编辑`config.json`文件，添加必要的API密钥（如需要）：
-```json
-{
-  "binance_api_key": "your_binance_api_key",
-  "binance_api_secret": "your_binance_api_secret",
-  "timeout": 30,
-  "cache_ttl": 60
-}
-```
-
-4. **启动服务器**
-```bash
-python crypto_mcp_server.py
 ```
 
 ### 客户端使用示例
@@ -245,15 +222,6 @@ async def query_new_tool(param1, param2):
    - 检查端口是否被占用
    - 验证依赖包是否正确安装
    - 检查配置文件格式是否正确
-
-### 日志查看
-服务器日志默认保存在`logs/`目录下，可通过调整`mcp.json`中的日志级别获取更详细的调试信息：
-```json
-{
-  "log_level": "DEBUG",
-  "log_file": "logs/server.log"
-}
-```
 
 ## 🤝 贡献指南
 欢迎提交Issue和Pull Request来改进本项目。提交代码时请遵循以下规范：
