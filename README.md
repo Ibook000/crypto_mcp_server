@@ -40,10 +40,10 @@
 - Python 3.8+ 
 
 ### 安装步骤
-**克隆仓库**
 ```bash
 git clone https://github.com/Ibook000/crypto_mcp_server.git
 cd crypto_mcp_server
+python crypto_mcp_server.py
 ```
 
 ### 客户端使用示例
