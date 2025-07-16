@@ -155,7 +155,6 @@ async def fetch_batch_crypto_prices(symbols: list) -> list | dict[str, Any]:
             return {"error": f"请求失败: {str(e)}"}
 
 
-
 def format_crypto_data(data: dict[str, Any] | str) -> str:
     """
     将加密货币价格数据格式化为易读文本。
@@ -332,6 +331,8 @@ def format_crypto_news(data: dict[str, Any] | str) -> str:
             result.append("----------------------------------------")
 
     return '\n'.join(result)
+
+def format_batch_crypto_data(data):
     """
     将批量加密货币价格数据格式化为易读文本。
     :param data: 价格数据（可以是列表、字典或 JSON 字符串）
