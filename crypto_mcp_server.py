@@ -440,4 +440,4 @@ if __name__ == "__main__":
     # asyncio.run(test_news())
     
     # 以标准 I/O 方式运行 MCP 服务器
-    #mcp.run(transport='stdio')
+    mcp.run(transport='stdio')
