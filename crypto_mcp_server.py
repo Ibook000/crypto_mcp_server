@@ -4,6 +4,7 @@ import datetime
 import re
 from typing import Any
 from mcp.server.fastmcp import FastMCP
+import asyncio
 
 # 初始化 MCP 服务器
 mcp = FastMCP("CryptoServer")
@@ -181,7 +182,6 @@ def format_crypto_data(data: dict[str, Any] | str) -> str:
         f"价格: {price} USDT\n"
     )
 
-
 def format_crypto_klines(data: list | dict[str, Any] | str) -> str:
     """
     将加密货币K线数据格式化为易读文本。
@@ -205,9 +205,7 @@ def format_crypto_klines(data: list | dict[str, Any] | str) -> str:
 
     # 格式化K线数据标题
     result = ["🕰️ K线数据列表（时间从旧到新）：\n"]
-    result.append("--------------------------------------------------------------------")
     result.append(f"{'时间':<20} {'开盘':<10} {'最高':<10} {'最低':<10} {'收盘':<10} {'交易量'}")
-    result.append("--------------------------------------------------------------------")
 
     # 格式化每条K线数据
     for kline in data:
@@ -233,7 +231,6 @@ def format_crypto_klines(data: list | dict[str, Any] | str) -> str:
 
     return '\n'.join(result)
 
-
 def format_funding_rate(data: list | dict[str, Any] | str) -> str:
     """
     将加密货币资金费率数据格式化为易读文本。
@@ -256,10 +253,8 @@ def format_funding_rate(data: list | dict[str, Any] | str) -> str:
         return "❌ 无效的资金费率数据格式"
 
     # 格式化资金费率数据标题
-    result = ["💸 资金费率历史数据（时间从旧到新）：\n"]
-    result.append("--------------------------------------------------------------------")
+    result = ["资金费率历史数据（时间从旧到新）：\n"]
     result.append(f"{'时间':<20} {'交易对':<10} {'资金费率':<12} {'收取时间'}")
-    result.append("--------------------------------------------------------------------")
 
     # 格式化每条资金费率数据
     for funding in data:
@@ -284,55 +279,60 @@ def format_funding_rate(data: list | dict[str, Any] | str) -> str:
 
     return '\n'.join(result)
 
-
 def format_crypto_news(data: dict[str, Any] | str) -> str:
     """
     将加密货币新闻数据格式化为易读文本
     :param data: 新闻数据（字典或JSON字符串）
     :return: 格式化后的新闻信息字符串
     """
-    # 解析JSON数据
+    # 检查是否有错误信息
+    if isinstance(data, dict) and "error" in data:
+        return f"⚠️ {data['error']}"
+
+    # 如果传入的是字符串，则先转换为字典
     if isinstance(data, str):
         try:
             data = json.loads(data)
         except Exception as e:
             return f"无法解析新闻数据: {e}"
 
-    # 处理错误情况
-    if isinstance(data, dict) and "error" in data:
-        return f"⚠️ {data['error']}"
-
     # 验证数据结构
-    if not isinstance(data, dict) or "data" not in data:
+    if not isinstance(data, dict) or "data" not in data or "arr_news" not in data["data"]:
         return "❌ 无效的新闻数据格式"
 
-    news_list = data.get("data", [])
-    if not news_list:
-        return "📰 未找到相关新闻"
-
-    # 格式化新闻内容
-    result = ["📋 加密货币新闻摘要：\n"]
-    result.append("========================================")
+    result = ["加密货币新闻摘要：\n"]
+    arr_news = data["data"]["arr_news"]
     
-    for idx, news in enumerate(news_list, 1):
-        try:
-            title = news.get("title", "无标题")
-            summary = news.get("summary", "无摘要")
-            publish_time = news.get("pubDate", "未知时间")
-            url = news.get("link", "#")
+    # 如果没有新闻数据
+    if not arr_news:
+        return "📰 暂无新闻数据"
 
-            result.append(f"{idx}. {title}")
-            result.append(f"发布时间: {publish_time}")
-            result.append(f"摘要: {summary}")
-            result.append(f"链接: {url}")
-            result.append("----------------------------------------")
+    for i in arr_news:
+        try:
+            news_type = i.get("type")
+            title = i.get("title", "无标题")
+            published_at = i.get("published_at", "未知时间")
+
+            if news_type == 'newsflashes':
+                description = i.get("description", "无简介")
+                description = description.replace('Odaily星球日报讯', '').strip()
+                news_url = i.get("news_url", "无链接")
+                result.append(
+                    f"【快讯】标题：{title}\n简介：{description}\n发布时间：{published_at}\n源网址：{news_url}\n"
+                )
+            elif news_type == 'posts':
+                summary = i.get("summary", "无摘要")
+                link = i.get("link", "无链接")
+                result.append(
+                    f"【文章】标题：{title}\n摘要：{summary}\n发布时间：{published_at}\n源网址：{link}\n"
+                )
         except Exception as e:
-            result.append(f"新闻解析错误: {str(e)}")
-            result.append("----------------------------------------")
+            result.append(f"⚠️ 新闻解析错误: {str(e)}")
+            continue
 
     return '\n'.join(result)
 
-def format_batch_crypto_data(data):
+def format_batch_crypto_data(data: list | dict[str, Any] | str) -> str:
     """
     将批量加密货币价格数据格式化为易读文本。
     :param data: 价格数据（可以是列表、字典或 JSON 字符串）
@@ -355,7 +355,6 @@ def format_batch_crypto_data(data):
 
     # 格式化批量价格数据标题
     result = ["📊 批量价格查询结果：\n"]
-    result.append("----------------------------------------")
 
     # 格式化每个交易对价格数据
     for item in data:
@@ -366,10 +365,8 @@ def format_batch_crypto_data(data):
             if price != "N/A":
                 price = f"{float(price):.8f}"
             result.append(f"交易对: {symbol}\n价格: {price} USDT")
-            result.append("----------------------------------------")
         except (KeyError, ValueError) as e:
-            result.append(f"⚠️ {item} 解析错误: {str(e)}")
-            result.append("----------------------------------------")
+            result.append(f"{item} 解析错误: {str(e)}")
 
     return '\n'.join(result)
 
@@ -428,5 +425,19 @@ async def query_funding_rate(symbol: str, limit: int = 10) -> str:
     return format_funding_rate(data)
 
 if __name__ == "__main__":
+    # 测试query_crypto_news函数
+    # async def test_news():
+    #     # 获取原始新闻数据
+    #     raw_data = await fetch_crypto_news(length=0)
+    #     print("📝 原始新闻数据：")
+    #     print(raw_data)
+    #     
+    #     # 格式化新闻数据
+    #     result = format_crypto_news(raw_data)
+    #     print("\n📰 新闻查询测试结果：")
+    #     print(result)
+    
+    # asyncio.run(test_news())
+    
     # 以标准 I/O 方式运行 MCP 服务器
-    mcp.run(transport='stdio')
+    #mcp.run(transport='stdio')
