@@ -69,6 +69,3 @@ print(price)
 1. 在`BinanceAPI`或`NewsAPI`类中实现新的数据源方法
 2. 创建对应的格式化函数
 3. 使用`@mcp.tool()`装饰器注册新工具
-
-## 📄 许可证
-[MIT](LICENSE)
