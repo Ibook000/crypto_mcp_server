@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "GitHub": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "windows-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@simonb97/server-win-cli"
+      ]
+    },
+    "CryptoServer": {
+      "command": "e:/pycode/Vocalis/venv/Scripts/python.exe",
+      "args": [
+        "E:/MCP/test/crypto_mcp_server.py"
+      ]
+    }
+  }
+}

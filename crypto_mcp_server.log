@@ -1,0 +1,64 @@
+2025-07-17 22:00:03,494 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['ETHUSDT', 'BNBUSDT', 'LINKUSDT', 'UNIUSDT', 'LTCUSDT']
+2025-07-17 22:00:03,496 - INFO - 开始批量获取加密货币价格，交易对: ['ETHUSDT', 'BNBUSDT', 'LINKUSDT', 'UNIUSDT', 'LTCUSDT']
+2025-07-17 22:00:06,120 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22ETHUSDT%22,%22BNBUSDT%22,%22LINKUSDT%22,%22UNIUSDT%22,%22LTCUSDT%22] "HTTP/1.1 200 OK"
+2025-07-17 22:00:06,123 - INFO - 成功批量获取 5 个加密货币价格数据
+2025-07-17 22:06:31,959 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-17 22:06:56,606 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-17 22:06:56,620 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:07:33,102 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:07:37,797 - INFO - Processing request of type CallToolRequest
+2025-07-17 22:07:37,799 - INFO - 调用 query_crypto_price 工具，交易对: ETH
+2025-07-17 22:07:37,799 - INFO - 开始获取 ETH 价格数据
+2025-07-17 22:07:40,101 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbol=ETH "HTTP/1.1 400 Bad Request"
+2025-07-17 22:07:40,102 - ERROR - ETH 价格获取失败: HTTP 400
+2025-07-17 22:08:22,004 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:08:25,656 - INFO - Processing request of type CallToolRequest
+2025-07-17 22:08:25,656 - INFO - 调用 query_crypto_news 工具，length: 0
+2025-07-17 22:08:25,657 - INFO - 开始获取加密货币新闻，length: 0
+2025-07-17 22:08:27,989 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
+2025-07-17 22:08:28,108 - INFO - 成功获取加密货币新闻，length: 0
+2025-07-17 22:24:00,473 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:24:09,094 - INFO - Processing request of type CallToolRequest
+2025-07-17 22:24:09,095 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT']
+2025-07-17 22:24:09,096 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT']
+2025-07-17 22:24:12,726 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22XRPUSDT%22,%22ADAUSDT%22,%22DOGEUSDT%22,%22MATICUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22] "HTTP/1.1 200 OK"
+2025-07-17 22:24:12,726 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-17 22:24:23,566 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:25:25,160 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-17 22:25:25,169 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:25:46,784 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:25:54,795 - INFO - Processing request of type CallToolRequest
+2025-07-17 22:25:54,795 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-17 22:25:54,796 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-17 22:25:57,011 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22,%22MATICUSDT%22,%22LINKUSDT%22] "HTTP/1.1 200 OK"
+2025-07-17 22:25:57,012 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-17 22:27:34,492 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:27:37,342 - INFO - Processing request of type CallToolRequest
+2025-07-17 22:27:37,342 - INFO - 调用 query_crypto_news 工具，length: 0
+2025-07-17 22:27:37,343 - INFO - 开始获取加密货币新闻，length: 0
+2025-07-17 22:27:39,896 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
+2025-07-17 22:27:40,023 - INFO - 成功获取加密货币新闻，length: 0
+2025-07-17 22:56:35,369 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:57:06,305 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:58:16,814 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-17 22:58:16,825 - INFO - Processing request of type ListToolsRequest
+2025-07-17 22:58:31,492 - INFO - Processing request of type ListToolsRequest
+2025-07-18 15:34:26,048 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-18 15:34:26,061 - INFO - Processing request of type ListToolsRequest
+2025-07-18 15:34:43,734 - INFO - Processing request of type ListToolsRequest
+2025-07-18 15:35:35,948 - INFO - Processing request of type ListToolsRequest
+2025-07-18 15:35:44,536 - INFO - Processing request of type CallToolRequest
+2025-07-18 15:35:44,538 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 15:35:44,540 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 15:35:46,904 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22,%22MATICUSDT%22,%22LINKUSDT%22] "HTTP/1.1 200 OK"
+2025-07-18 15:35:46,907 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-18 15:35:49,293 - INFO - Processing request of type CallToolRequest
+2025-07-18 15:35:49,295 - INFO - 调用 query_crypto_news 工具，length: 0
+2025-07-18 15:35:49,295 - INFO - 开始获取加密货币新闻，length: 0
+2025-07-18 15:35:51,599 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
+2025-07-18 15:35:51,681 - INFO - 成功获取加密货币新闻，length: 0
+2025-07-18 20:39:51,018 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-18 20:39:51,032 - INFO - Processing request of type ListToolsRequest
+2025-07-18 20:40:23,673 - INFO - Processing request of type ListToolsRequest
+2025-07-18 20:43:59,168 - INFO - Processing request of type ListToolsRequest
+2025-07-18 20:44:40,930 - INFO - Processing request of type ListToolsRequest
