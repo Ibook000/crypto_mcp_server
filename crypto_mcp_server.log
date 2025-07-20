@@ -62,3 +62,39 @@
 2025-07-18 20:40:23,673 - INFO - Processing request of type ListToolsRequest
 2025-07-18 20:43:59,168 - INFO - Processing request of type ListToolsRequest
 2025-07-18 20:44:40,930 - INFO - Processing request of type ListToolsRequest
+2025-07-18 23:25:07,038 - INFO - Crypto MCP 服务器启动成功，开始监听请求...
+2025-07-18 23:25:08,741 - INFO - Processing request of type ListToolsRequest
+2025-07-18 23:26:42,446 - INFO - Processing request of type ListToolsRequest
+2025-07-18 23:26:52,259 - INFO - Processing request of type CallToolRequest
+2025-07-18 23:26:52,259 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 23:26:52,260 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 23:26:54,831 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22,%22MATICUSDT%22,%22LINKUSDT%22] "HTTP/1.1 200 OK"
+2025-07-18 23:26:54,833 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-18 23:32:21,307 - INFO - Processing request of type ListToolsRequest
+2025-07-18 23:32:30,583 - INFO - Processing request of type CallToolRequest
+2025-07-18 23:32:30,584 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 23:32:30,584 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-18 23:32:33,002 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22,%22MATICUSDT%22,%22LINKUSDT%22] "HTTP/1.1 200 OK"
+2025-07-18 23:32:33,004 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-18 23:32:35,734 - INFO - Processing request of type CallToolRequest
+2025-07-18 23:32:35,735 - INFO - 调用 query_crypto_news 工具，length: 0
+2025-07-18 23:32:35,735 - INFO - 开始获取加密货币新闻，length: 0
+2025-07-18 23:32:38,575 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
+2025-07-18 23:32:38,729 - INFO - 成功获取加密货币新闻，length: 0
+2025-07-19 01:35:10,625 - INFO - Processing request of type ListToolsRequest
+2025-07-19 01:35:17,749 - INFO - Processing request of type CallToolRequest
+2025-07-19 01:35:17,753 - INFO - 调用 query_batch_crypto_prices 工具，交易对列表: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-19 01:35:17,756 - INFO - 开始批量获取加密货币价格，交易对: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT', 'AVAXUSDT', 'MATICUSDT', 'LINKUSDT']
+2025-07-19 01:35:20,667 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22,%22MATICUSDT%22,%22LINKUSDT%22] "HTTP/1.1 200 OK"
+2025-07-19 01:35:20,671 - INFO - 成功批量获取 10 个加密货币价格数据
+2025-07-19 01:35:24,352 - INFO - Processing request of type CallToolRequest
+2025-07-19 01:35:24,354 - INFO - 调用 query_funding_rate 工具，交易对: BTCUSDT, 数量: 10
+2025-07-19 01:35:24,354 - INFO - 开始获取 BTCUSDT 的资金费率数据，数量: 10
+2025-07-19 01:35:26,799 - INFO - HTTP Request: GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=10 "HTTP/1.1 200 "
+2025-07-19 01:35:26,800 - INFO - 成功获取 BTCUSDT 的资金费率数据，数量: 10
+2025-07-19 01:35:29,767 - INFO - Processing request of type CallToolRequest
+2025-07-19 01:35:29,768 - INFO - 调用 query_funding_rate 工具，交易对: ETHUSDT, 数量: 10
+2025-07-19 01:35:29,768 - INFO - 开始获取 ETHUSDT 的资金费率数据，数量: 10
+2025-07-19 01:35:32,301 - INFO - HTTP Request: GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&limit=10 "HTTP/1.1 200 "
+2025-07-19 01:35:32,302 - INFO - 成功获取 ETHUSDT 的资金费率数据，数量: 10
+2025-07-19 01:35:53,148 - INFO - Processing request of type ListToolsRequest
