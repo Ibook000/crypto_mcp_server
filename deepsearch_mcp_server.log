@@ -1,0 +1,79 @@
+2025-07-21 22:32:01,586 - __main__ - WARNING - 警告: TAVILY_API_KEY环境变量未设置，搜索功能将无法正常工作
+2025-07-21 22:32:01,601 - __main__ - ERROR - 初始化Tavily客户端失败: No API key provided. Please provide the api_key attribute or set the TAVILY_API_KEY environment variable.
+2025-07-21 23:49:09,331 - ERROR - 保存 MD 文件失败: write() argument must be str, not None
+2025-07-22 00:09:00,349 - INFO - 总结内容已保存到 search_summary.md
+2025-07-22 00:09:31,792 - INFO - 总结内容已保存到 search_summary.md
+2025-07-22 00:10:10,524 - INFO - 总结内容已保存到 search_summary.md
+2025-07-22 00:18:02,827 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:02,829 - INFO - Retrying request to /chat/completions in 0.468371 seconds
+2025-07-22 00:18:05,263 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-22 00:18:17,369 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:17,369 - INFO - Retrying request to /chat/completions in 0.446733 seconds
+2025-07-22 00:18:20,453 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:20,454 - INFO - Retrying request to /chat/completions in 0.868347 seconds
+2025-07-22 00:18:23,736 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:23,738 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:18:25,982 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:25,983 - INFO - Retrying request to /chat/completions in 0.392757 seconds
+2025-07-22 00:18:28,637 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:28,638 - INFO - Retrying request to /chat/completions in 0.880214 seconds
+2025-07-22 00:18:31,851 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:31,852 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/google/gemini-2.0-flash-exp/78bd9fda-a7c8-4d2e-b65c-e1b0f3a8d9d0. High demand for google/gemini-2.0-flash-exp:free on OpenRouter - limited to 4 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '4', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1753114740000'}, 'provider_name': None}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:18:34,883 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:34,884 - INFO - Retrying request to /chat/completions in 0.446654 seconds
+2025-07-22 00:18:38,335 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:38,335 - INFO - Retrying request to /chat/completions in 0.758682 seconds
+2025-07-22 00:18:41,442 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:41,444 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:18:43,544 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:43,545 - INFO - Retrying request to /chat/completions in 0.499550 seconds
+2025-07-22 00:18:46,118 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:46,118 - INFO - Retrying request to /chat/completions in 0.971868 seconds
+2025-07-22 00:18:49,191 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:18:49,192 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-min. ', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '20', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1753114740000'}, 'provider_name': None}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:18:49,197 - INFO - 总结内容已保存到 search_summary.md
+2025-07-22 00:22:40,943 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:40,945 - INFO - Retrying request to /chat/completions in 0.397685 seconds
+2025-07-22 00:22:44,637 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:44,639 - INFO - Retrying request to /chat/completions in 0.987715 seconds
+2025-07-22 00:22:48,091 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:48,091 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:22:50,509 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:50,510 - INFO - Retrying request to /chat/completions in 0.399746 seconds
+2025-07-22 00:22:53,227 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:53,228 - INFO - Retrying request to /chat/completions in 0.756652 seconds
+2025-07-22 00:22:56,613 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:56,614 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:22:59,685 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:22:59,687 - INFO - Retrying request to /chat/completions in 0.436794 seconds
+2025-07-22 00:23:02,605 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:02,606 - INFO - Retrying request to /chat/completions in 0.984926 seconds
+2025-07-22 00:23:07,340 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-22 00:23:20,162 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:20,163 - INFO - Retrying request to /chat/completions in 0.445573 seconds
+2025-07-22 00:23:23,031 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:23,031 - INFO - Retrying request to /chat/completions in 0.906886 seconds
+2025-07-22 00:23:25,848 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-22 00:23:53,264 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:53,265 - INFO - Retrying request to /chat/completions in 0.478020 seconds
+2025-07-22 00:23:55,939 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:55,940 - INFO - Retrying request to /chat/completions in 0.789379 seconds
+2025-07-22 00:23:58,887 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-22 00:23:58,888 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1753142400000'}, 'provider_name': None}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-22 00:23:58,897 - INFO - 总结内容已保存到 search_summary.md
+2025-07-23 00:35:01,810 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-23 00:35:21,133 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-23 00:35:42,498 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:35:42,501 - INFO - Retrying request to /chat/completions in 0.491751 seconds
+2025-07-23 00:35:45,876 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:35:45,877 - INFO - Retrying request to /chat/completions in 0.863575 seconds
+2025-07-23 00:35:50,077 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:35:50,079 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-23 00:35:52,705 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:35:52,706 - INFO - Retrying request to /chat/completions in 0.394459 seconds
+2025-07-23 00:35:56,328 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:35:56,329 - INFO - Retrying request to /chat/completions in 0.887128 seconds
+2025-07-23 00:36:00,539 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-23 00:36:00,541 - ERROR - 调用 OpenAI API 失败: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.0-flash-exp:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google'}}, 'user_id': 'user_2qiXYaoIA7RUFIvV5C5cUvlCEtw'}
+2025-07-23 00:36:02,762 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-23 00:36:21,795 - INFO - 总结内容已保存到 search_summary.md
