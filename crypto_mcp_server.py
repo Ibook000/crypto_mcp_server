@@ -25,9 +25,11 @@ BINANCE_PRICE_API = "https://api.binance.com/api/v3/ticker/price"
 BINANCE_BATCH_PRICE_API = "https://api.binance.com/api/v3/ticker/price"
 BINANCE_KLINES_API = "https://api.binance.com/api/v3/klines"
 BINANCE_FUNDING_RATE_API = "https://fapi.binance.com/fapi/v1/fundingRate"
+BINANCE_DEPTH_API = "https://api.binance.com/api/v3/depth"
 # 加密货币新闻 API 配置
 ODAILY_NEWS_API = "https://www.odaily.news/v1/openapi/feeds"
 USER_AGENT = "crypto-app/1.0"
+
 
 async def fetch_crypto_price(symbol: str) -> dict[str, Any] | None:
     """
@@ -374,18 +376,17 @@ def format_batch_crypto_data(data: list | dict[str, Any] | str) -> str:
 
 @mcp.tool()
 async def query_crypto_price(symbol: str) -> str:
-    logging.info(f"调用 query_crypto_price 工具，交易对: {symbol}")
     """
     输入加密货币交易对（如 BTCUSDT），返回当前价格信息。
     :param symbol: 交易对符号（需使用大写，如 BTCUSDT）
     :return: 格式化后的价格信息
     """
+    logging.info(f"调用 query_crypto_price 工具，交易对: {symbol}")
     data = await fetch_crypto_price(symbol)
     return format_crypto_data(data)
 
 @mcp.tool()
 async def query_crypto_klines(symbol: str, interval: str, limit: int = 100) -> str:
-    logging.info(f"调用 query_crypto_klines 工具，交易对: {symbol}, 周期: {interval}, 数量: {limit}")
     """
     输入加密货币交易对、时间周期和K线数量，返回过往K线数据。
     :param symbol: 交易对符号（需使用大写，如 BTCUSDT）
@@ -393,40 +394,135 @@ async def query_crypto_klines(symbol: str, interval: str, limit: int = 100) -> s
     :param limit: 获取K线数量（1-1000，默认100）
     :return: 格式化后的K线信息
     """
+    logging.info(f"调用 query_crypto_klines 工具，交易对: {symbol}, 周期: {interval}, 数量: {limit}")
     data = await fetch_crypto_klines(symbol, interval, limit)
     return format_crypto_klines(data)
 
 @mcp.tool()
 async def query_crypto_news(length: int = 0) -> str:
-    logging.info(f"调用 query_crypto_news 工具，length: {length}")
     """
     通过Odaily的权威加密货币新闻源查询加密货币相关新闻
     :param length: 0 表示今天的新闻，1 表示昨天的新闻，默认 0
     :return: 格式化后的新闻信息
     """
+    logging.info(f"调用 query_crypto_news 工具，length: {length}")
     data = await fetch_crypto_news(length)
     return format_crypto_news(data)
 
+async def fetch_order_book(symbol: str, limit: int = 100) -> dict[str, Any] | None:
+    """
+    从币安 API 获取加密货币市场深度数据。
+    :param symbol: 交易对符号（如 BTCUSDT）
+    :param limit: 获取订单数量（默认100，最大值5000）
+    :return: 市场深度数据字典；若出错返回包含 error 信息的字典
+    """
+    logging.info(f"开始获取 {symbol} 市场深度数据，limit: {limit}")
+    # 验证limit参数有效性
+    limit = max(1, min(limit, 5000))
+    params = {
+        "symbol": symbol,
+        "limit": limit
+    }
+    headers = {"User-Agent": USER_AGENT}
+
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.get(BINANCE_DEPTH_API, params=params, headers=headers, timeout=30.0)
+            response.raise_for_status()
+            logging.info(f"成功获取 {symbol} 市场深度数据")
+            return response.json()
+        except httpx.HTTPStatusError as e:
+            logging.error(f"{symbol} 市场深度获取失败: HTTP {e.response.status_code}")
+            return {"error": f"HTTP 错误: {e.response.status_code}"}
+        except Exception as e:
+            logging.error(f"{symbol} 市场深度获取失败: {str(e)}")
+            return {"error": f"请求失败: {str(e)}"}
+
+
+def format_order_book(data: dict[str, Any] | str) -> str:
+    """
+    将加密货币市场深度数据格式化为易读文本。
+    :param data: 市场深度数据（可以是字典或 JSON 字符串）
+    :return: 格式化后的市场深度信息字符串
+    """
+    # 如果传入的是字符串，则先转换为字典
+    if isinstance(data, str):
+        try:
+            data = json.loads(data)
+        except Exception as e:
+            return f"无法解析市场深度数据: {e}"
+
+    # 如果数据中包含错误信息，直接返回错误提示
+    if "error" in data:
+        return f"⚠️ {data['error']}"
+
+    # 验证是否为有效的市场深度数据
+    if not isinstance(data, dict) or "asks" not in data or "bids" not in data:
+        return "❌ 无效的市场深度数据格式"
+
+    # 提取基本信息
+    symbol = data.get("symbol", "未知")
+    last_update_id = data.get("lastUpdateId", "N/A")
+    result = [f"{symbol} 市场深度 (lastUpdateId: {last_update_id})\n"]
+    result.append("\n卖单 (Asks):\n")
+    result.append(f"{'价格(USDT)':<15} {'数量':<20} {'总额(USDT)'}\n")
+
+    # 格式化卖单数据 (按价格从低到高)
+    asks = data["asks"]
+    for ask in asks[:5]:  # 只显示前5档
+        price = float(ask[0])
+        quantity = float(ask[1])
+        total = price * quantity
+        result.append(f"{price:<15.8f} {quantity:<20.8f} {total:.2f}")
+
+    # 格式化买单数据 (按价格从高到低)
+    result.append("\n买单 (Bids):\n")
+    result.append(f"{'价格(USDT)':<15} {'数量':<20} {'总额(USDT)'}\n")
+    bids = data["bids"]
+    for bid in bids[:5]:  # 只显示前5档
+        price = float(bid[0])
+        quantity = float(bid[1])
+        total = price * quantity
+        result.append(f"{price:<15.8f} {quantity:<20.8f} {total:.2f}")
+
+    return '\n'.join(result)
+
+
+@mcp.tool()
+async def query_order_book(symbol: str, limit: int = 100) -> str:
+    """
+    查询加密货币市场深度数据（订单簿）。
+    :param symbol: 交易对符号（需使用大写，如 BTCUSDT）
+    :param limit: 获取订单数量（1-5000，默认100）
+    :return: 格式化后的市场深度信息
+    """
+    logging.info(f"调用 query_order_book 工具，交易对: {symbol}, 订单数量: {limit}")
+    data = await fetch_order_book(symbol, limit)
+    return format_order_book(data)
+
+
 @mcp.tool()
 async def query_batch_crypto_prices(symbols: list) -> str:
-    logging.info(f"调用 query_batch_crypto_prices 工具，交易对列表: {symbols}")
+    
     """
     批量查询多个加密货币的当前价格。
     :param symbols: 交易对符号列表（需使用大写，如 ["BTCUSDT", "ETHUSDT"]）
     :return: 格式化后的批量价格信息
     """
+    logging.info(f"调用 query_batch_crypto_prices 工具，交易对列表: {symbols}")
     data = await fetch_batch_crypto_prices(symbols)
     return format_batch_crypto_data(data)
 
 @mcp.tool()
 async def query_funding_rate(symbol: str, limit: int = 10) -> str:
-    logging.info(f"调用 query_funding_rate 工具，交易对: {symbol}, 数量: {limit}")
+    
     """
     输入加密货币交易对，返回过往资金费率数据。
     :param symbol: 交易对符号（需使用大写永续合约符号，如 BTCUSDT）
     :param limit: 获取记录数量（1-1000，默认10）
     :return: 格式化后的资金费率信息
     """
+    logging.info(f"调用 query_funding_rate 工具，交易对: {symbol}, 数量: {limit}")
     data = await fetch_funding_rate(symbol, limit)
     return format_funding_rate(data)
 

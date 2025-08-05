@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Client Web UI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 MCP Client Web UI</h1>
+            <p>与多个MCP服务器交互的Web界面</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="content-wrapper">
+                <div class="server-info">
+                    <h2>📡 已连接的服务器</h2>
+                    <div id="servers-list">
+                        {% for server in servers %}
+                        <div class="server-card">
+                            <div class="server-name">{{ server.name }}</div>
+                            <div class="tools-list">
+                                {% for tool in server.tools %}
+                                <span class="tool-tag">{{ tool }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="chat-container">
+                    <div class="chat-box" id="chat-box">
+                        <div class="message bot-message">
+                            <div class="message-header">🤖 助手</div>
+                            <div class="message-content">你好！我是MCP客户端助手。你可以问我任何问题，我会使用可用的工具来帮助你。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="loading" id="loading">
+                        ⏳ 正在处理中...
+                    </div>
+                    
+                    <div class="input-area">
+                        <input type="text" id="user-input" placeholder="输入你的问题..." autocomplete="off">
+                        <div class="button-group">
+                            <button id="reset-btn">重置对话</button>
+                            <button id="send-btn">发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <footer style="text-align: center; padding: 20px; color: #6b7280; font-size: 0.9rem; margin-top: 30px;">
+            <p>MCP Client Web UI &copy; 2023 | 与多个MCP服务器交互的Web界面</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
