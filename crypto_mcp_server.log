@@ -1,134 +1,23 @@
-2025-07-29 14:13:25,134 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-07-29 14:13:25,146 - INFO - Processing request of type ListToolsRequest
-2025-08-01 17:32:35,402 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 17:32:35,413 - INFO - Processing request of type ListToolsRequest
-2025-08-01 17:34:15,234 - INFO - Processing request of type ListToolsRequest
-2025-08-01 17:34:27,643 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:14:59,682 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:15:54,206 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:16:22,380 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:16:36,712 - INFO - Processing request of type CallToolRequest
-2025-08-01 18:16:36,716 - INFO - µ÷ÓÃ query_crypto_price ¹¤¾ß£¬½»Ò×¶Ô: BTCUSDT
-2025-08-01 18:16:36,716 - INFO - ¿ªÊ¼»ñÈ¡ BTCUSDT ¼Û¸ñÊı¾İ
-2025-08-01 18:16:39,606 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
-2025-08-01 18:16:39,608 - INFO - ³É¹¦»ñÈ¡ BTCUSDT ¼Û¸ñÊı¾İ
-2025-08-01 18:16:40,138 - INFO - Processing request of type CallToolRequest
-2025-08-01 18:16:40,138 - INFO - µ÷ÓÃ query_crypto_klines ¹¤¾ß£¬½»Ò×¶Ô: BTCUSDT, ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-01 18:16:40,138 - INFO - ¿ªÊ¼»ñÈ¡ BTCUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-01 18:16:43,947 - INFO - HTTP Request: GET https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=7 "HTTP/1.1 200 OK"
-2025-08-01 18:16:43,951 - INFO - ³É¹¦»ñÈ¡ BTCUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-01 18:16:44,485 - INFO - Processing request of type CallToolRequest
-2025-08-01 18:16:44,486 - INFO - µ÷ÓÃ query_crypto_news ¹¤¾ß£¬length: 0
-2025-08-01 18:16:44,486 - INFO - ¿ªÊ¼»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-01 18:16:47,692 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
-2025-08-01 18:16:47,723 - INFO - ³É¹¦»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-01 18:16:52,619 - INFO - Processing request of type CallToolRequest
-2025-08-01 18:16:52,619 - INFO - µ÷ÓÃ query_crypto_news ¹¤¾ß£¬length: 0
-2025-08-01 18:16:52,619 - INFO - ¿ªÊ¼»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-01 18:16:55,326 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
-2025-08-01 18:16:55,341 - INFO - ³É¹¦»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-01 18:24:46,175 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 18:24:46,186 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:27:13,898 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 18:27:13,912 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:34:28,904 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 18:34:28,916 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:41:17,005 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 18:41:17,020 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:43:05,843 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:48:16,638 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:48:59,117 - INFO - Processing request of type ListToolsRequest
-2025-08-01 18:49:50,203 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 18:49:50,216 - INFO - Processing request of type ListToolsRequest
-2025-08-01 21:08:50,042 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:29:59,781 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 23:29:59,794 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:31:48,135 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:36:31,792 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:36:35,966 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:36:43,203 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:36:48,511 - INFO - Processing request of type ListToolsRequest
-2025-08-01 23:36:49,528 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-01 23:36:49,546 - INFO - Processing request of type ListToolsRequest
-2025-08-05 02:56:25,346 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 02:56:27,042 - INFO - Processing request of type ListToolsRequest
-2025-08-05 02:57:22,960 - INFO - Processing request of type ListToolsRequest
-2025-08-05 02:57:23,350 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:01:06,140 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:01:07,521 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:02:34,337 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:04:46,159 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:04:47,854 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:06:59,905 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:08:04,395 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:08:45,071 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:09:09,132 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:09:09,142 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:10:24,778 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:10:31,548 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:10:31,562 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:13:03,701 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:15:21,155 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:15:39,911 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:15:42,621 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:17:18,218 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:17:26,293 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:17:33,886 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:22:24,673 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:22:24,688 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:23:58,064 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:24:08,234 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:28:27,862 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:29:36,835 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:29:36,845 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:30:29,262 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:31:50,928 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:34:21,748 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:34:30,217 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:35:47,617 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:35:47,629 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:36:01,697 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:36:07,573 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:36:12,650 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:36:47,807 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:40:08,979 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:41:52,550 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 03:41:52,560 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:43:04,925 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:43:29,504 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:44:00,813 - INFO - Processing request of type ListToolsRequest
-2025-08-05 03:44:34,752 - INFO - Processing request of type ListToolsRequest
-2025-08-05 12:02:50,830 - INFO - Crypto MCP ·şÎñÆ÷Æô¶¯³É¹¦£¬¿ªÊ¼¼àÌıÇëÇó...
-2025-08-05 12:02:50,842 - INFO - Processing request of type ListToolsRequest
-2025-08-05 12:04:17,628 - INFO - Processing request of type ListToolsRequest
-2025-08-05 12:06:29,938 - INFO - Processing request of type ListToolsRequest
-2025-08-05 12:06:34,932 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:06:34,933 - INFO - µ÷ÓÃ query_crypto_news ¹¤¾ß£¬length: 0
-2025-08-05 12:06:34,933 - INFO - ¿ªÊ¼»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-05 12:06:38,335 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
-2025-08-05 12:06:38,428 - INFO - ³É¹¦»ñÈ¡¼ÓÃÜ»õ±ÒĞÂÎÅ£¬length: 0
-2025-08-05 12:06:46,978 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:06:46,979 - INFO - µ÷ÓÃ query_batch_crypto_prices ¹¤¾ß£¬½»Ò×¶ÔÁĞ±í: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT']
-2025-08-05 12:06:46,980 - INFO - ¿ªÊ¼ÅúÁ¿»ñÈ¡¼ÓÃÜ»õ±Ò¼Û¸ñ£¬½»Ò×¶Ô: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'AVAXUSDT']
-2025-08-05 12:06:50,051 - INFO - HTTP Request: GET https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22BNBUSDT%22,%22SOLUSDT%22,%22ADAUSDT%22,%22XRPUSDT%22,%22DOGEUSDT%22,%22MATICUSDT%22,%22DOTUSDT%22,%22AVAXUSDT%22] "HTTP/1.1 200 OK"
-2025-08-05 12:06:50,052 - INFO - ³É¹¦ÅúÁ¿»ñÈ¡ 10 ¸ö¼ÓÃÜ»õ±Ò¼Û¸ñÊı¾İ
-2025-08-05 12:06:58,486 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:06:58,486 - INFO - µ÷ÓÃ query_crypto_klines ¹¤¾ß£¬½»Ò×¶Ô: BTCUSDT, ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:06:58,487 - INFO - ¿ªÊ¼»ñÈ¡ BTCUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:07:01,411 - INFO - HTTP Request: GET https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=7 "HTTP/1.1 200 OK"
-2025-08-05 12:07:01,412 - INFO - ³É¹¦»ñÈ¡ BTCUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:07:01,940 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:07:01,941 - INFO - µ÷ÓÃ query_crypto_klines ¹¤¾ß£¬½»Ò×¶Ô: ETHUSDT, ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:07:01,941 - INFO - ¿ªÊ¼»ñÈ¡ ETHUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:07:04,761 - INFO - HTTP Request: GET https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=7 "HTTP/1.1 200 OK"
-2025-08-05 12:07:04,762 - INFO - ³É¹¦»ñÈ¡ ETHUSDT µÄKÏßÊı¾İ£¬ÖÜÆÚ: 1d, ÊıÁ¿: 7
-2025-08-05 12:07:11,170 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:07:11,171 - INFO - µ÷ÓÃ query_funding_rate ¹¤¾ß£¬½»Ò×¶Ô: BTCUSDT, ÊıÁ¿: 5
-2025-08-05 12:07:11,172 - INFO - ¿ªÊ¼»ñÈ¡ BTCUSDT µÄ×Ê½ğ·ÑÂÊÊı¾İ£¬ÊıÁ¿: 5
-2025-08-05 12:07:14,892 - INFO - HTTP Request: GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5 "HTTP/1.1 200 "
-2025-08-05 12:07:14,893 - INFO - ³É¹¦»ñÈ¡ BTCUSDT µÄ×Ê½ğ·ÑÂÊÊı¾İ£¬ÊıÁ¿: 5
-2025-08-05 12:07:15,418 - INFO - Processing request of type CallToolRequest
-2025-08-05 12:07:15,419 - INFO - µ÷ÓÃ query_funding_rate ¹¤¾ß£¬½»Ò×¶Ô: ETHUSDT, ÊıÁ¿: 5
-2025-08-05 12:07:15,420 - INFO - ¿ªÊ¼»ñÈ¡ ETHUSDT µÄ×Ê½ğ·ÑÂÊÊı¾İ£¬ÊıÁ¿: 5
-2025-08-05 12:07:18,496 - INFO - HTTP Request: GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&limit=5 "HTTP/1.1 200 "
-2025-08-05 12:07:18,496 - INFO - ³É¹¦»ñÈ¡ ETHUSDT µÄ×Ê½ğ·ÑÂÊÊı¾İ£¬ÊıÁ¿: 5
+2025-08-06 23:27:46,119 - INFO - è°ƒç”¨ query_crypto_news_search å·¥å…·ï¼Œå…³é”®è¯: bitcoin, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-06 23:27:46,120 - INFO - å¼€å§‹æœç´¢æ–°é—»ï¼Œå…³é”®è¯: bitcoin, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-06 23:27:52,656 - INFO - HTTP Request: GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=f2efe8407f314c349ec5f9de3e01e49e&language=zh&pageSize=5&sortBy=publishedAt "HTTP/1.1 200 OK"
+2025-08-06 23:27:52,658 - INFO - æˆåŠŸæœç´¢åˆ° 5 æ¡æ–°é—»
+2025-08-06 23:33:29,800 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-06 23:37:23,960 - INFO - å¼€å§‹è·å–åŠ å¯†è´§å¸æ–°é—»ï¼Œlength: 0
+2025-08-06 23:37:29,843 - INFO - HTTP Request: GET https://www.odaily.news/v1/openapi/feeds?length=0 "HTTP/1.1 200 OK"
+2025-08-06 23:37:29,866 - INFO - æˆåŠŸè·å–åŠ å¯†è´§å¸æ–°é—»ï¼Œlength: 0
+2025-08-06 23:43:05,044 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-06 23:52:46,729 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 00:01:52,831 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 00:05:25,438 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 00:06:05,957 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 00:13:11,179 - INFO - è°ƒç”¨ query_crypto_news_search å·¥å…·ï¼Œå…³é”®è¯: bitcoin, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-07 00:13:11,179 - INFO - å¼€å§‹æœç´¢æ–°é—»ï¼Œå…³é”®è¯: bitcoin, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-07 00:13:34,030 - ERROR - æ–°é—»æœç´¢å¤±è´¥: All connection attempts failed
+2025-08-07 00:13:34,031 - INFO - è°ƒç”¨ query_crypto_news_search å·¥å…·ï¼Œå…³é”®è¯: åŠ å¯†è´§å¸, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-07 00:13:34,032 - INFO - å¼€å§‹æœç´¢æ–°é—»ï¼Œå…³é”®è¯: åŠ å¯†è´§å¸, è¯­è¨€: zh, æ•°é‡: 5, æ’åº: publishedAt
+2025-08-07 00:13:56,991 - ERROR - æ–°é—»æœç´¢å¤±è´¥: All connection attempts failed
+2025-08-07 00:13:56,996 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 02:19:48,097 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 02:40:59,685 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...
+2025-08-07 02:49:28,402 - INFO - Crypto MCP æœåŠ¡å™¨å¯åŠ¨æˆåŠŸï¼Œå¼€å§‹ç›‘å¬è¯·æ±‚...

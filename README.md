@@ -136,6 +136,19 @@ Web UI特性：
 - **返回**：格式化的新闻摘要列表
 - **示例**：`query_crypto_news(length=0)`
 
+### 6. query_crypto_news_search
+通过NewsAPI搜索加密货币相关新闻
+- **参数**：
+  - `query` (str) - 搜索关键词，如"bitcoin", "ethereum", "加密货币"
+  - `api_key` (str, 可选) - NewsAPI的API密钥，如果不提供则跳过此工具
+  - `language` (str, 可选) - 语言代码，默认"zh"，可选"en"
+  - `sort_by` (str, 可选) - 排序方式，默认"publishedAt"，可选"relevancy", "popularity"
+  - `page_size` (int, 可选) - 返回新闻数量，默认10，最大100
+- **返回**：格式化的新闻搜索结果列表
+- **使用前提**：需要先在NewsAPI注册获取API密钥（免费）
+- **注册地址**：https://newsapi.org/register
+- **示例**：`query_crypto_news_search(query="bitcoin", api_key="your_api_key_here")`
+
 ## 📝 详细示例输出
 
 ### 价格查询
@@ -267,6 +280,81 @@ MCP客户端现在支持对话历史记忆，能够在多轮对话中保持上�
 - **conversation_history**：在MCPClient类中维护对话历史列表
 - **process_query**：在处理查询时使用完整的对话历史
 - **reset_conversation**：提供清除对话历史的方法
+
+### 配置NewsAPI新闻搜索功能
+
+#### 🔑 获取API密钥
+要使用`query_crypto_news_search`功能，需要先获取NewsAPI密钥：
+1. 访问 https://newsapi.org/register 注册账号（免费）
+2. 登录后获取API密钥
+3. 将密钥添加到配置文件中
+
+#### ⚙️ 配置方法
+
+**方法1：通过mcp.json配置**
+在`mcp.json`文件中添加环境变量配置：
+```json
+{
+    "mcpServers": {
+        "crypto": {
+            "command": "python",
+            "args": [
+            "crypto_mcp_server.py",
+            "--NEWS_API_KEY", 
+            "your_newsapi_key_here"
+            ],
+        }
+    }
+}
+```
+
+**方法2：通过环境变量**
+在启动服务器前设置环境变量：
+```bash
+# Windows
+set NEWS_API_KEY=your_newsapi_key_here
+python crypto_mcp_server.py
+
+# Linux/Mac
+export NEWS_API_KEY=your_newsapi_key_here
+python crypto_mcp_server.py
+```
+
+**方法3：通过config.json配置**
+在`config.json`中添加配置：
+```json
+{
+    "news_api_key": "your_newsapi_key_here",
+    "max_retries": 3,
+    "retry_delay": 1,
+    "max_delay": 60
+}
+```
+
+#### 📋 使用示例
+
+**基本使用**：
+```python
+# 搜索比特币相关新闻
+news = client.call("query_crypto_news_search", 
+                   query="bitcoin", 
+                   api_key="your_api_key_here")
+print(news)
+
+# 搜索中文加密货币新闻
+news = client.call("query_crypto_news_search", 
+                   query="加密货币", 
+                   api_key="your_api_key_here", 
+                   language="zh", 
+                   page_size=5)
+print(news)
+```
+
+**不配置API密钥的情况**：
+如果未配置API密钥，新闻搜索工具将不会注册，调用时会提示：
+```
+❌ 新闻搜索功能需要配置NewsAPI密钥
+```
 
 ### 添加新工具步骤
 1. **实现数据获取函数**：在`crypto_mcp_server.py`中添加新的异步数据获取函数

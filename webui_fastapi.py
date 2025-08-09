@@ -100,7 +100,7 @@ async def reset_conversation():
         mcp_client.reset_conversation()
         return {"status": "对话历史已清除"}
     return {"error": "MCP客户端未初始化"}
-
+ 
 @app.get("/servers")
 async def list_servers():
     """List available servers and their tools"""
