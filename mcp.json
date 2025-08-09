@@ -10,10 +10,13 @@
     "CryptoServer": {
       "command": "e:/pycode/Vocalis/venv/Scripts/python.exe",
       "args": [
-        "E:/MCP/test/crypto_mcp_server.py"
-      ]
+        "E:/MCP/test/crypto_mcp_server.py",
+        "--NEWS_API_KEY",
+        "f2efe8407f314c349ec5f9de3e01e49e"
+      ],
+      "env": {}
     },
-      "Filesystem": {
+    "Filesystem": {
       "command": "npx",
       "args": [
         "-y",
