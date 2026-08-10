@@ -1,8 +1,21 @@
 # Crypto MCP Server 🚀
 
-加密货币市场数据 MCP（Model Context Protocol）服务器，提供实时行情、K 线数据、资金费率与行业新闻查询工具，并配套自研 **MCP Client 库** 与 **LLM 编排层**，可直接被任意 Agent 作为工具调用。
+> **2025 年 7 月 · MCP 协议发布之初的首批实践之一**  
+> 在 Model Context Protocol 刚公开时就投入开发的早期 MCP Server，国内较早的 MCP 探索项目之一。
 
-> 适用场景：量化交易分析、市场监控、加密货币研究、Agent 工具调用生态建设。
+一套完整的加密货币市场数据 MCP 服务端 + 客户端工具链。提供实时行情、K 线、资金费率、市场深度、行业新闻和深度搜索能力，可直接被任何 MCP 兼容的 Agent（Claude Code、Cursor、Codex 等）作为工具调用。
+
+---
+
+## 背景
+
+2025 年 7 月，Anthropic 开源了 MCP（Model Context Protocol）协议。当时市面上几乎没有现成的 MCP Server 实现，文档和工具链都不完善。这个项目就是在那个阶段开始的——从零搭建 MCP Server 框架、实现 stdio 传输、注册工具、编写客户端库，算是国内最早一批把 MCP 跑起来的尝试。
+
+项目结构保留了早期的探索痕迹：有专门的 MCP Client 库（`mcp_client.py`），有 LLM 编排层，也有后来追加的 WebUI 管理后台。不是最优雅的代码，但每一行都是当时真实踩坑的记录。
+
+---
+
+## ✨ 核心能力
 
 ---
 
