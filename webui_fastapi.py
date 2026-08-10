@@ -28,7 +28,7 @@ async def startup_event():
     try:
         mcp_client = MCPClient()
         # Connect to all MCP servers asynchronously
-        print("正在连接所有MCP服务器...")
+        print("Connecting to all MCP servers...")
         connect_tasks = []
         for server_name in mcp_client.mcp_servers.keys():
             connect_tasks.append(connect_to_server_async(server_name))
@@ -37,18 +37,18 @@ async def startup_event():
         await asyncio.gather(*connect_tasks, return_exceptions=True)
         
         if not mcp_client.servers:
-            print("❌ 没有成功连接到任何MCP服务器")
+            print("No MCP servers connected")
     except Exception as e:
-        print(f"❌ 初始化MCP客户端失败: {str(e)}")
+        print(f"MCP client initialization failed: {str(e)}")
 
 async def connect_to_server_async(server_name: str):
     """Connect to a server asynchronously"""
     global mcp_client
     try:
         await mcp_client.connect_to_server(server_name)
-        print(f"✅ 成功连接到 {server_name}")
+        print(f"Connected to {server_name}")
     except Exception as e:
-        print(f"⚠️ 连接 {server_name} 失败: {str(e)}")
+        print(f"Failed to connect to {server_name}: {str(e)}")
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -73,7 +73,7 @@ async def read_root(request: Request):
                     "tools": tools
                 })
             except Exception as e:
-                print(f"⚠️ 获取 {server_name} 工具列表失败: {str(e)}")
+                print(f"Failed to get tools from {server_name}: {str(e)}")
     
     return templates.TemplateResponse("index.html", {
         "request": request,
@@ -84,22 +84,22 @@ async def read_root(request: Request):
 async def chat(query: str = Form(...)):
     """Process chat messages"""
     if not mcp_client:
-        return {"error": "MCP客户端未初始化"}
+        return {"error": "MCP client not initialized"}
     
     try:
         # Process the query using MCP client
         response = await mcp_client.process_query(query)
         return {"response": response}
     except Exception as e:
-        return {"error": f"处理查询时发生错误: {str(e)}"}
+        return {"error": f"Query processing error: {str(e)}"}
 
 @app.post("/reset")
 async def reset_conversation():
     """Reset conversation history"""
     if mcp_client:
         mcp_client.reset_conversation()
-        return {"status": "对话历史已清除"}
-    return {"error": "MCP客户端未初始化"}
+        return {"status": "Conversation history cleared"}
+    return {"error": "MCP client not initialized"}
  
 @app.get("/servers")
 async def list_servers():
@@ -116,7 +116,7 @@ async def list_servers():
                     "tools": tools
                 })
             except Exception as e:
-                print(f"⚠️ 获取 {server_name} 工具列表失败: {str(e)}")
+                print(f"Failed to get tools from {server_name}: {str(e)}")
     return {"servers": servers_info}
 
 if __name__ == "__main__":
