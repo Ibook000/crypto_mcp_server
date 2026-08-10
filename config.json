@@ -1,1 +1,8 @@
-ewogICJvcGVuYWlfYXBpX2tleSI6ICJ5b3VyLWFwaS1rZXktaGVyZSIsCiAgImJhc2VfdXJsIjogImh0dHBzOi8vYXBpLm1vb25zaG90LmNuL3YxIiwKICAibW9kZWwiOiAia2ltaS1rMi0wNzExLXByZXZpZXciLAogICJtYXhfcmV0cmllcyI6IDYsCiAgInJldHJ5X2RlbGF5IjogMjAsCiAgIm1heF9kZWxheSI6IDEyMAp9
+{
+  "openai_api_key": "",
+  "base_url": "https://api.moonshot.cn/v1",
+  "model": "kimi-k2-0711-preview",
+  "max_retries": 6,
+  "retry_delay": 20,
+  "max_delay": 120
+}

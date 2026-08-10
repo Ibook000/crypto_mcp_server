@@ -1,1 +1,9 @@
-ZmFzdGFwaT09MC4xMTAuMAp1dmljb3JuPT0wLjI5LjAKaHR0cHg9PTAuMjcuMApvcGVuYWk9PTEuMzAuMAptY3A9PTAuMS4wCnB5dGhvbi1tdWx0aXBhcnQ9PTAuMC45CmppbmphMj09My4xLjMKcHl0aG9uLWRvdGVudgo=
+fastapi==0.110.0
+uvicorn==0.29.0
+httpx==0.27.0
+openai==1.30.0
+mcp==0.1.0
+python-multipart==0.0.9
+jinja2==3.1.3
+python-dotenv
+tavily-python

@@ -1,1 +1,8 @@
-IyDmlY/mhJ/kv6Hmga8KLmVudgoqLmxvZwpfX3B5Y2FjaGVfXy8KKi5weWMKKi5weW8KLnZzY29kZS8KLmlkZWEvCg==
+# 敏感信息
+.env
+*.log
+__pycache__/
+*.pyc
+*.pyo
+.vscode/
+.idea/

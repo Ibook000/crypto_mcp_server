@@ -1,1 +1,2 @@
-QGVjaG8gb2ZmCnB5dGhvbiB3ZWJ1aV9mYXN0YXBpLnB5
+@echo off
+python webui_fastapi.py

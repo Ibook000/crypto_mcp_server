@@ -1,1 +1,168 @@
-IyBDcnlwdG8gTUNQIFNlcnZlciDwn5qACgrliqDlr4botKfluIHluILlnLrmlbDmja4gTUNQ77yITW9kZWwgQ29udGV4dCBQcm90b2NvbO+8ieacjeWKoeWZqO+8jOS6jiAqKk1DUCDljY/orq7lj5HluIPkuYvliJ3vvIgyMDI1IOW5tCA3IOaciO+8ieWNs+aKleWFpeW8gOWPkSoq77yM5piv5Zu95YaF6L6D5pep55qE5LiA5om5IE1DUCBTZXJ2ZXIg5a6e6Le15LmL5LiA44CC5o+Q5L6b5a6e5pe26KGM5oOF44CBSyDnur/mlbDmja7jgIHotYTph5HotLnnjofkuI7ooYzkuJrmlrDpl7vmn6Xor6Llt6XlhbfvvIzlubbphY3lpZfoh6rnoJQgKipNQ1AgQ2xpZW50IOW6kyoqIOS4jiAqKkxMTSDnvJbmjpLlsYIqKu+8jOWPr+ebtOaOpeiiq+S7u+aEjyBBZ2VudCDkvZzkuLrlt6XlhbfosIPnlKjjgIIKCj4g6YCC55So5Zy65pmv77ya6YeP5YyW5Lqk5piT5YiG5p6Q44CB5biC5Zy655uR5o6n44CB5Yqg5a+G6LSn5biB56CU56m244CBQWdlbnQg5bel5YW36LCD55So55Sf5oCB5bu66K6+44CCCgotLS0KCiMjIOKcqCDmoLjlv4Pog73lipsKCi0gKirml6nmnJ8gTUNQIOWunui3tSoq77ya6Ieq56CU5a6M5pW0IE1DUCBTZXJ2ZXIgKyBDbGllbnTvvIzopobnm5YgYHN0ZGlvYCDkvKDovpPjgIFgQG1jcC50b29sKClgIOW3peWFt+azqOWGjOOAgeW8guatpSBJL08KLSAqKuWunuaXtuihjOaDhSoq77ya5Y2V5biB56eNIC8g5om56YeP5Yqg5a+G6LSn5biB5Lu35qC85p+l6K+i77yI5pWw5o2u5rqQ77yaQmluYW5jZe+8iQotICoqSyDnur/mlbDmja4qKu+8muWkmuaXtumXtOWRqOacn++8iDFtIC0gMU3vvInljoblj7IgSyDnur/vvIzlkKvlvIAv6auYL+S9ji/mlLYv5oiQ5Lqk6YePCi0gKirotYTph5HotLnnjocqKu+8muawuOe7reWQiOe6pui1hOmHkei0ueeOh+WOhuWPsu+8jOaUr+aMgeiHquWumuS5ieadoeaVsAotICoq5rex5bqm5pCc57SiKirvvJpUYXZpbHkgYWR2YW5jZWQgc2VhcmNoICsgTExNIOe7k+aehOWMluaAu+e7k++8iGBkZWVwc2VhcmNoX21jcF9zZXJ2ZXIucHlg77yJCi0gKirooYzkuJrmlrDpl7sqKu+8muaVtOWQiCBPZGFpbHkgLyBOZXdzQVBJIOWkmua6kOaWsOmXuwotICoq5Y+v6KeG5YyW566h55CGKirvvJpGYXN0QVBJIFdlYlVJIOeuoeeQhuWQjuWPsO+8iGB3ZWJ1aV9mYXN0YXBpLnB5YO+8iQotICoq5aSaIFNlcnZlciDnvJbmjpIqKu+8mkNsaWVudCDmlK/mjIHlkIzml7bms6jlhozlpJrkuKogTUNQIFNlcnZlciDlubbnu5/kuIDosIPnlKgKCi0tLQoKIyMg8J+PlyDns7vnu5/mnrbmnoQKCmBgYApBZ2VudCAvIOeUqOaItwogICAgICDilIIgIHN0ZGlvIChNQ1Ag5Y2P6K6uKQogICAgICDilrwK4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICBNQ1AgQ2xpZW50IOW6kyAgICAgIOKUguKXhOKUgOKUgOKUgOKUgOKUgOKUgOKWuuKUgiAgRmFzdEFQSSBXZWJVSSAgIOKUggrilIIgIChtY3BfY2xpZW50LnB5KSAgICDilIIgICAgICAgIOKUgiAgKOWPr+inhuWMlueuoeeQhikgICAgIOKUggrilJTilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJggICAgICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogICAgICAgICDilIIgIHN0ZGlvCiAgICAgICAgIOKWvArilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICAgTUNQIFNlcnZlciDlsYIgICAgIOKUggrilIIgIEZhc3RNQ1AgLyBAbWNwLnRvb2zilIIK4pSc4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCuKUgiBjcnlwdG9fbWNwX3NlcnZlciAgIOKUgiAg6KGM5oOFIC8gSyDnur8gLyDotYTph5HotLnnjocK4pSCIGRlZXBzZWFyY2hfc2VydmVyICAg4pSCICDmt7HluqbmkJzntKIgKyBMTE0g5oC757uTCuKUgiB3ZWF0aGVyX3NlcnZlciAgICAgIOKUgiAg5qih5Z2X5YyW5omp5bGV56S65L6LCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogICAgICAgICDilIIKICAgICAgICAg4pa8CuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkArilIIgICBMTE0g57yW5o6S5bGCICAgICAgICDilIIgIE1vb25zaG90IC8gT3BlblJvdXRlcgrilIIgICAo6YeN6K+V6YCA6YG/KSAgICAgICAgIOKUgiAgZXhwb25lbnRpYWwgYmFja29mZgrilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKYGBgCgotLS0KCiMjIPCfk4Ig6aG555uu57uT5p6ECgp8IOaWh+S7tiB8IOivtOaYjiB8CnwtLS0tLS18LS0tLS0tfAp8IGBjcnlwdG9fbWNwX3NlcnZlci5weWAgfCDliqDlr4botKfluIEgTUNQIFNlcnZlciDmoLjlv4PvvJrlvILmraXmlbDmja7ojrflj5YgKyDlt6Xlhbfms6jlhowgfAp8IGBkZWVwc2VhcmNoX21jcF9zZXJ2ZXIucHlgIHwg5rex5bqm5pCc57SiIE1DUCBTZXJ2ZXLvvIhUYXZpbHkgKyBMTE0g5oC757uT77yJIHwKfCBgbWNwX2NsaWVudC5weWAgfCAqKuiHqueglCBNQ1AgQ2xpZW50IOW6kyoq77ya6L+e5o6l566h55CG44CB5aSaIFNlcnZlciDms6jlhozjgIHph43or5XpgIDpgb/jgIFMTE0g57yW5o6SIHwKfCBgd2VhdGhlcl9tY3Bfc2VydmVyLnB5YCB8IOaooeWdl+WMluaJqeWxleekuuS+iyB8CnwgYHdlYnVpX2Zhc3RhcGkucHlgIHwgRmFzdEFQSSDlj6/op4bljJbnrqHnkIblkI7lj7AgfAp8IGBjb25maWcuanNvbmAgfCBMTE0gLyDph43or5Xlj4LmlbDphY3nva7vvIjlr4bpkqXor7fpgJrov4cgYC5lbnZg77yJIHwKfCBgbWNwLmpzb25gIHwgTUNQIFNlcnZlciDlkK/liqjphY3nva4gfAp8IGAuZW52LmV4YW1wbGVgIHwg546v5aKD5Y+Y6YeP5qih5p2/77yI5aSN5Yi25Li6IGAuZW52YCDlkI7loavlhpnvvIkgfAp8IGByZXF1aXJlbWVudHMudHh0YCB8IFB5dGhvbiDkvp3otZYgfAoKLS0tCgojIyDwn5qAIOW/q+mAn+W8gOWniwoKIyMjIDEuIOWuieijhQoKYGBgYmFzaApnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL0lib29rMDAwL2NyeXB0b19tY3Bfc2VydmVyLmdpdApjZCBjcnlwdG9fbWNwX3NlcnZlcgpwaXAgaW5zdGFsbCAtciByZXF1aXJlbWVudHMudHh0CmBgYAoKIyMjIDIuIOmFjee9ruWvhumSpe+8iOWuieWFqOaWueW8j++8iQoKYGBgYmFzaApjcCAuZW52LmV4YW1wbGUgLmVudgojIOe8lui+kSAuZW5277yM5aGr5YWl5L2g55qE55yf5a6e5a+G6ZKlCmBgYAoKPiDimqDvuI8gYC5lbnZgIOW3suWKoOWFpSBgLmdpdGlnbm9yZWDvvIzliIfli7/mj5DkuqTjgILku6PnoIHpgJrov4cgYG9zLmVudmlyb24uZ2V0KClgIOivu+WPluWvhumSpe+8jOaXoOaYjuaWh+ehrOe8lueggeOAggoKIyMjIDMuIOWQr+WKqCBTZXJ2ZXIKCmBgYGJhc2gKcHl0aG9uIGNyeXB0b19tY3Bfc2VydmVyLnB5CmBgYAoK5pSv5oyB6YCa6L+HIGBtY3AuanNvbmAg5Zyo5Lu75oSPIE1DUCDlhbzlrrnnmoQgQWdlbnTvvIhDbGF1ZGUgQ29kZeOAgUNvZGV4IOetie+8ieS4reazqOWGjOiwg+eUqOOAggoKIyMjIDQuIOmAmui/hyBDbGllbnQg6LCD55So77yIUHl0aG9u77yJCgpgYGBweXRob24KZnJvbSBtY3BfY2xpZW50IGltcG9ydCBNQ1BDbGllbnQKaW1wb3J0IGFzeW5jaW8KCmNsaWVudCA9IE1DUENsaWVudCgpCgphc3luYyBkZWYgbWFpbigpOgogICAgcmVzdWx0ID0gYXdhaXQgY2xpZW50LmNhbGwoImdldF9jcnlwdG9fcHJpY2UiLCBzeW1ib2w9IkJUQ1VTRFQiKQogICAgcHJpbnQocmVzdWx0KQoKYXN5bmNpby5ydW4obWFpbigpKQpgYGAKCi0tLQoKIyMg8J+UpyDmioDmnK/opoHngrkKCi0gKirlvILmraXmlbDmja7ojrflj5YqKu+8mmBodHRweGAgKyBgYXN5bmNpb2DvvIzmlK/mjIHmibnph4/lubbooYzmn6Xor6IKLSAqKuaooeWdl+WMluaJqeWxlSoq77ya5paw5aKe5pWw5o2u5rqQ5Y+q6ZyA5a6e546wIGBmZXRjaF94eHhgICsgYGZvcm1hdF94eHhgICsgYEBtY3AudG9vbCgpYAotICoq6YeN6K+V6YCA6YG/KirvvJpDbGllbnQg5YaF572u5oyH5pWw6YCA6YG/6YeN6K+V77yIYG1heF9yZXRyaWVzYCAvIGByZXRyeV9kZWxheWAgLyBgbWF4X2RlbGF5YO+8iQotICoq5aSa5Lyg6L6T5qih5byPKirvvJpgc3RkaW9gIOagh+WHhiBJL0/vvIzlhbzlrrnkuLvmtYEgQWdlbnQg5bmz5Y+wCgotLS0KCiMjIPCfk7gg5pWI5p6c5bGV56S6CgpXZWJVSSDnrqHnkIblkI7lj7DmiKrlm77op4EgYHdlYnVpLnBuZ2AgLyBgd2VidWkxLnBuZ2DjgIIKCi0tLQoKIyMgTGljZW5zZQoKTUlU
+# Crypto MCP Server 🚀
+
+加密货币市场数据 MCP（Model Context Protocol）服务器，提供实时行情、K 线数据、资金费率与行业新闻查询工具，并配套自研 **MCP Client 库** 与 **LLM 编排层**，可直接被任意 Agent 作为工具调用。
+
+> 适用场景：量化交易分析、市场监控、加密货币研究、Agent 工具调用生态建设。
+
+---
+
+## ✨ 核心能力
+
+- **实时行情**：单币种 / 批量加密货币价格查询（数据源：Binance）
+- **K 线数据**：多时间周期（1m - 1M）历史 K 线，含开/高/低/收/成交量
+- **资金费率**：永续合约资金费率历史，支持自定义条数
+- **市场深度**：订单簿买卖盘数据（Asks / Bids）
+- **深度搜索**：Tavily advanced search + LLM 结构化总结（`deepsearch_mcp_server.py`）
+- **行业新闻**：整合 Odaily / NewsAPI 多源新闻
+- **天气扩展**：模块化扩展示例（`weather_mcp_server.py`）
+- **可视化管理**：FastAPI WebUI 管理后台（`webui_fastapi.py`）
+- **多 Server 编排**：Client 支持同时注册多个 MCP Server 并统一调用
+- **重试退避**：Client 内置指数退避重试，应对 API 速率限制
+
+---
+
+## 🏗 系统架构
+
+```
+Agent / 用户
+      │  stdio (MCP 协议)
+      ▼
+┌─────────────────────┐        ┌──────────────────┐
+│  MCP Client 库      │◄──────►│  FastAPI WebUI   │
+│  (mcp_client.py)    │        │  (可视化管理)     │
+└────────┬────────────┘        └──────────────────┘
+         │  stdio
+         ▼
+┌─────────────────────┐
+│   MCP Server 层     │
+│  FastMCP / @mcp.tool│
+├─────────────────────┤
+│ crypto_mcp_server   │  行情 / K 线 / 资金费率 / 深度
+│ deepsearch_server   │  深度搜索 + LLM 总结
+│ weather_server      │  模块化扩展示例
+└─────────────────────┘
+         │
+         ▼
+┌─────────────────────┐
+│   LLM 编排层        │  Moonshot / OpenRouter
+│   (重试退避)         │  exponential backoff
+└─────────────────────┘
+```
+
+---
+
+## 📂 项目结构
+
+| 文件 | 说明 |
+|------|------|
+| `crypto_mcp_server.py` | 加密货币 MCP Server 核心：异步数据获取 + 工具注册 |
+| `deepsearch_mcp_server.py` | 深度搜索 MCP Server（Tavily + LLM 总结） |
+| `mcp_client.py` | **自研 MCP Client 库**：连接管理、多 Server 注册、重试退避、LLM 编排 |
+| `weather_mcp_server.py` | 模块化扩展示例（OpenWeather） |
+| `webui_fastapi.py` | FastAPI 可视化管理后台 |
+| `config.json` | LLM / 重试参数配置（密钥请通过 `.env`） |
+| `mcp.json` | MCP Server 启动配置 |
+| `.env.example` | 环境变量模板（复制为 `.env` 后填写） |
+| `requirements.txt` | Python 依赖 |
+| `static/` `templates/` | WebUI 静态资源与模板 |
+
+---
+
+## 🚀 快速开始
+
+### 1. 克隆与安装
+
+```bash
+git clone https://github.com/Ibook000/crypto_mcp_server.git
+cd crypto_mcp_server
+pip install -r requirements.txt
+```
+
+### 2. 配置密钥（安全方式）
+
+```bash
+cp .env.example .env
+# 编辑 .env，填入你的真实密钥
+```
+
+需要的密钥：
+
+| 环境变量 | 用途 | 获取 |
+|----------|------|------|
+| `NEWS_API_KEY` | NewsAPI 行业新闻搜索 | https://newsapi.org |
+| `TAVILY_API_KEY` | deepsearch 深度搜索 | https://tavily.com |
+| `OPENROUTER_API_KEY` | deepsearch LLM 总结 | https://openrouter.ai |
+| `OPENAI_API_KEY` | mcp_client LLM 编排（Moonshot 兼容） | https://platform.moonshot.cn |
+| `OPENWEATHER_API_KEY` | 天气模块 | https://openweathermap.org |
+
+> ⚠️ `.env` 已加入 `.gitignore`，切勿提交。代码通过 `os.environ.get()` 读取密钥，无明文硬编码。
+
+### 3. 启动 MCP Server
+
+```bash
+python crypto_mcp_server.py          # 加密货币行情
+python deepsearch_mcp_server.py      # 深度搜索
+python weather_mcp_server.py         # 天气
+```
+
+每个 Server 以 `stdio` 方式运行，可被任意 MCP 兼容的 Agent（Claude Code、Codex 等）调用。
+
+### 4. 通过 Client 调用（Python）
+
+```python
+from mcp_client import MCPClient
+import asyncio
+
+client = MCPClient()
+
+async def main():
+    for server_name in client.mcp_servers.keys():
+        await client.connect_to_server(server_name)
+    result = await client.process_query("BTC 现在的价格是多少？")
+    print(result)
+
+asyncio.run(main())
+```
+
+### 5. 启动 WebUI 管理后台
+
+```bash
+python webui_fastapi.py
+# 浏览器访问 http://localhost:8000
+```
+
+---
+
+## 🛠 可用 MCP 工具（crypto_mcp_server.py）
+
+| 工具 | 说明 |
+|------|------|
+| `query_crypto_price` | 查询单个币种当前价格（如 `BTCUSDT`） |
+| `query_batch_crypto_prices` | 批量查询多个币种价格 |
+| `query_crypto_klines` | 查询 K 线数据（周期 `1m`-`1M`，数量最多 1000） |
+| `query_funding_rate` | 查询永续合约资金费率 |
+| `query_order_book` | 查询市场深度（订单簿） |
+| `query_crypto_news` | 查询加密货币行业新闻（Odaily） |
+| `query_crypto_news_search` | 通过 NewsAPI 搜索新闻 |
+
+---
+
+## 🔧 技术要点
+
+- **异步数据获取**：`httpx` + `asyncio`，支持批量并行查询
+- **模块化扩展**：新增数据源只需实现 `fetch_xxx` + `format_xxx` + `@mcp.tool()`
+- **重试退避**：Client 内置指数退避重试（`max_retries` / `retry_delay` / `max_delay`）
+- **多传输模式**：`stdio` 标准 I/O，兼容主流 Agent 平台
+- **错误容错**：所有数据获取函数均返回结构化错误信息，格式化函数有边界校验
+
+---
+
+## 📸 效果展示
+
+WebUI 管理后台截图见 `webui.png` / `webui1.png`。
+
+---
+
+## License
+
+MIT

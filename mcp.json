@@ -1,1 +1,16 @@
-ewogICJtY3BTZXJ2ZXJzIjogewogICAgIndpbmRvd3MtY2xpIjogewogICAgICAiY29tbWFuZCI6ICJucHgiLAogICAgICAiYXJncyI6IFsKICAgICAgICAiLXkiLAogICAgICAgICJAc2ltb25iOTcvc2VydmVyLXdpbi1jbGkiCiAgICAgIF0KICAgIH0sCiAgICAiQ3J5cHRvU2VydmVyIjogewogICAgICAiY29tbWFuZCI6ICJlOi9weWNvZGUvVm9jYWxpcy92ZW52L1NjcmlwdHMvcHl0aG9uLmV4ZSIsCiAgICAgICJhcmdzIjogWwogICAgICAgICJFOi9NQ1AvdGVzdC9jcnlwdG9fbWNwX3NlcnZlci5weSIsCiAgICAgICAgIi0tTkVXU19BUElfS0VZIiwKICAgICAgICAieW91ci1uZXdzLWFwaS1rZXkiCiAgICAgIF0sCiAgICAgICJlbnYiOiB7fQogICAgfSwKICAgICJGaWxlc3lzdGVtIjogewogICAgICAiY29tbWFuZCI6ICJucHgiLAogICAgICAiYXJncyI6IFsKICAgICAgICAiLXkiLAogICAgICAgICJAbW9kZWxjb250ZXh0cHJvdG9jb2wvc2VydmVyLWZpbGVzeXN0ZW0iLAogICAgICAgICJDOi9Vc2Vycy9pYm9vay9EZXNrdG9wIgogICAgICBdLAogICAgICAiZW52Ijoge30KICAgIH0KICB9Cn0=
+{
+  "mcpServers": {
+    "CryptoServer": {
+      "command": "python",
+      "args": [
+        "crypto_mcp_server.py"
+      ]
+    },
+    "WeatherServer": {
+      "command": "python",
+      "args": [
+        "weather_mcp_server.py"
+      ]
+    }
+  }
+}
